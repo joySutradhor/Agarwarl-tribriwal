@@ -102,7 +102,7 @@ export default function ComingSoonPage() {
         </button>
       </motion.div>
 
-      {/* Modal */}
+      {/* Modal here*/}
       {showModal && (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50">
           <motion.div
