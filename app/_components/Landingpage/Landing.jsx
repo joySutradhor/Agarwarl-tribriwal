@@ -95,9 +95,9 @@ export default function ComingSoonPage() {
         {/* Notify Button */}
         <button
           onClick={() => setShowModal(true)}
-          className="inline-flex items-center gap-3 bg-[#101b4d] text-white font-semibold px-8 py-4 rounded-full shadow hover:scale-105 transition-transform duration-300 text-lg"
+          className=" cursor-pointer inline-flex items-center gap-3 bg-[#101b4d] text-white font-semibold px-8 py-4 rounded-full shadow hover:scale-105 transition-transform duration-300 text-lg"
         >
-          <MdEmail className="text-2xl" />
+          <MdEmail className="text-2xl cursor-pointer" />
           Notify Me
         </button>
       </motion.div>
@@ -109,16 +109,16 @@ export default function ComingSoonPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="bg-transparent backdrop-blur-4xl p-8 rounded-2xl w-full max-w-lg shadow-xl relative"
+            className=" backdrop-blur-4xl p-8 rounded-2xl w-full max-w-lg shadow-xl relative"
           >
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-3 right-4 text-gray-400 hover:text-red-500 text-xl font-bold"
+              className="absolute top-3 right-4 text-red-500 text-xl font-bold cursor-pointer" 
             >
               ×
             </button>
-            <h2 className="text-2xl font-bold text-center mb-4 text-[#101b4d]">Get Notified</h2>
-            <p className="text-gray-700 text-center mb-6 text-sm">
+            <h2 className="text-2xl font-bold text-center mb-4 text-white">Get Notified</h2>
+            <p className="text-white text-center mb-6 text-sm">
               Enter your email to be notified when we launch!
             </p>
             <form className="flex flex-col gap-4">
@@ -129,7 +129,7 @@ export default function ComingSoonPage() {
               />
               <button
                 type="submit"
-                className="bg-[#101b4d] text-white py-3 rounded-lg font-semibold hover:scale-105 transition"
+                className="bg-[#101b4d] text-white py-3 rounded-lg font-semibold hover:scale-105 transition cursor-pointer"
               >
                 Notify Me
               </button>
