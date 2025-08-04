@@ -34,7 +34,7 @@ export default function ComingSoonPage() {
   }, []);
 
   return (
-   <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-gradient-to-br from-[#98b5f7d0] via-[#f5f9ff] to-[#3b83f6bd]">
+   <div className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden bg-gradient-to-br from-[#98b5f7d0] via-[#f5f9ff] to-[#98b5f7d0]">
 
       {/* Decorative Light */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-white to-transparent rounded-full blur-[200px] opacity-30 pointer-events-none z-0" />
@@ -44,7 +44,7 @@ export default function ComingSoonPage() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 w-full max-w-6xl bg-gradient-to-br from-[#98b4f7] via-[#f5f9ff] to-[#3b82f6] backdrop-blur-xl rounded-[32px] shadow-2xl p-8 md:p-20 text-center"
+        className="relative z-10 w-full max-w-6xl bg-gradient-to-br from-[#98b4f7] via-gray-200 to-[#98b4f7] backdrop-blur-xl rounded-[32px] shadow-2xl p-8 md:p-20 text-center"
       >
         {/* Logo */}
         <div className="flex justify-center mb-6">
@@ -54,16 +54,13 @@ export default function ComingSoonPage() {
               alt="Logo"
               width={180}
               height={60}
-              className="object-cover h-[60px] w-full"
+              className="object-cover h-[40px] lg:h-[60px] w-full"
             />
           </div>
         </div>
 
-        {/* Title */}
-        <div className="text-4xl mb-6">
-          <FaThumbsUp className="inline text-yellow-600" />
-        </div>
-        <p className="uppercase text-sm sm:text-base font-semibold text-gray-700">We're still</p>
+      
+        <p className="uppercase text-sm sm:text-base font-semibold text-gray-700 mt-10 xl:mt-16 ">We're still</p>
         <h1 className="text-4xl sm:text-6xl font-extrabold text-[#101b4d] mt-2 mb-6">
           Coming Soon
         </h1>
@@ -112,7 +109,7 @@ export default function ComingSoonPage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="bg-transparent backdrop-blur-2xl p-8 rounded-2xl w-full max-w-lg shadow-xl relative"
+            className="bg-transparent backdrop-blur-4xl p-8 rounded-2xl w-full max-w-lg shadow-xl relative"
           >
             <button
               onClick={() => setShowModal(false)}
